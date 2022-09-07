@@ -1,0 +1,428 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: serif;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.main-content {
+  padding-top: 1rem;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: all .2s;
+}
+
+.mobile-menu-open {
+  filter: blur(8px);
+  transition: all .2s;
+}
+
+footer {
+  position: sticky;
+  top: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header-wrapper {
+  height: 5rem;
+  width: 100vw;
+  background-color: white;
+  position: relative;
+  box-shadow: rgb(3 27 78 / 10%) 0px 2px 4px;
+}
+
+.header-container {
+  height: 100%;
+  max-width: 72rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.header-labname {
+  height: 5rem;
+  font-size: 1.25rem;
+  display: grid;
+  place-items: center;
+}
+
+.header-labname a {
+  width: 100%;
+  text-decoration: none;
+  transition-property:
+    background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  color: #4a5568;
+}
+
+.header-labname a:hover {
+  color: #38b2ac;
+}
+
+.header-labname__major {
+  font-size: 0.8rem;
+}
+
+.navbar {
+  height: 3rem;
+  display: grid;
+  place-items: center;
+}
+
+.navbar a {
+  text-decoration: none;
+  transition-property:
+    background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  color: #4a5568;
+}
+
+.navbar a:hover {
+  color: #38b2ac;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.navbar.show {
+  display: block;
+  animation: show .2s linear 0s;
+}
+
+.cover-image {
+  width: 40%;
+}
+
+.members-photo {
+  width: 75%;
+}
+
+
+.news-table {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.news-row {
+  vertical-align: top;
+  padding-bottom: 1rem;
+}
+
+.member-table {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding-top: 2rem;
+}
+
+.member-table a {
+  text-decoration: none;
+  transition-property:
+    background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 300ms;
+  color: black;
+}
+
+.member-table a:hover {
+  color: #38b2ac;
+}
+
+.member-table__item {
+  padding: 1rem 0;
+}
+
+.member-table__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.member-table__position {
+  font-size: 1.15rem;
+}
+
+.member-table__member-name {
+  padding-bottom: 1rem;
+}
+
+.member-table__member-name--ja {
+  font-size: 1rem;
+}
+
+.member-table__member-name--en {
+  font-size: 1rem;
+}
+
+.access-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.intro-video {
+  width: 75%;
+}
+
+.papers__list {
+  padding: 1rem 1rem;
+  list-style: disc;
+}
+
+.mobile-nav-button {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 100;
+  height: 49px;
+  width: 49px;
+  border-radius: 24.5px;
+  border: 1px solid #4a5568;
+  background-color: white;
+}
+
+.bar {
+  width: 21px;
+  height: 1px;
+  display: block;
+  left: 13px;
+  position: absolute;
+  background-color: #4a5568;
+}
+
+.bar_top {
+  top: 13px;
+  transition: transform .2s
+}
+
+.bar_mid {
+  top: 23px;
+  transition: opacity .2s;
+}
+
+.bar_btm {
+  bottom: 13px;
+  transition: transform .2s
+}
+
+.mobile-nav-button.close .bar_top {
+  transform: translate(0px, 10px) rotate(45deg);
+  transition: transform .2s;
+}
+
+.mobile-nav-button.close .bar_mid {
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.mobile-nav-button.close .bar_btm {
+  transform: translate(0px, -10px) rotate(-45deg);
+  transition: transform .2s;
+}
+
+.google-map {
+  width: 100%;
+  aspect-ratio: 4/3;
+  border: 0;
+}
+
+.google-map-wrapper {
+  padding-top: 2rem;
+}
+
+/* small size device */
+@media(max-width: 640px) {
+  .navbar {
+    display: none;
+    z-index: 1000;
+  }
+
+  .navbar ul {
+    height: auto;
+    width: calc(100% - 2rem);
+    position: fixed;
+    top: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: rgb(3 27 78 / 10%) 0px 2px 4px;
+    border-radius: 1rem;
+  }
+
+  .navbar ul li {
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+
+  .navbar ul li:first-child {
+    margin-top: 1rem;
+  }
+
+  .navbar ul li:last-child {
+    margin-bottom: 1rem;
+  }
+
+  .intro-video {
+    width: 100%;
+  }
+
+  .cover-image {
+    width: 70%;
+  }
+
+  .members-photo {
+    width: 90%;
+  }
+
+  .news-table {
+    grid-template-columns: 1fr;
+  }
+
+  .member-table {
+    grid-template-columns: 1fr;
+  }
+
+  .news-content {
+    padding-bottom: 1.5rem;
+  }
+}
+
+/* medium or large size device */
+@media(min-width: 640px) {
+  .mobile-nav-button {
+    display: none;
+  }
+
+  .header-wrapper {
+    height: 8rem;
+  }
+
+  .navbar ul {
+    justify-content: space-between;
+  }
+
+  .navbar ul li {
+    margin: 0;
+    height: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    border-bottom: 2px solid transparent;
+  }
+
+  .navbar ul li.current-page {
+    border-bottom: 2px solid #38b2ac;
+  }
+
+  .news-table {
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .news-content {
+    padding-left: 1rem;
+  }
+
+  .google-map-wrapper {
+    width: 80%;
+  }
+}
+
+/* large size device */
+@media(min-width: 1024px) {
+  .header-wrapper {
+    height: 5rem;
+  }
+
+  .header-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .navbar {
+    height: 5rem;
+  }
+
+  .navbar ul {
+    justify-content: flex-end;
+    height: 100%;
+  }
+
+  .navbar ul li {
+    margin-left: 1rem;
+  }
+
+  .news-table {
+    grid-template-columns: 1fr 7fr;
+  }
+
+  .access-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .google-map-wrapper {
+    width: 100%;
+    padding-top: 1rem;
+  }
+}

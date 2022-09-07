@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>生体機械システム研究室</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="header-container">
+
+        <div class="header-labname">
+          <a href="index.html">
+            <div class="header-labname__major">
+              大阪大学大学院基礎工学研究科 機能創生専攻 生体工学領域
+            </div>
+            <div>
+              生体機械システムグループ 青井研究室
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <div id="navbar" class="navbar">
+            <ul>
+              <li class="current-page"><a href="index.html">トップ</a></li>
+              <li><a href="members.html">メンバー</a></li>
+              <li><a href="research.html">研究内容</a></li>
+              <li><a href="publications.html">研究業績</a></li>
+              <li><a href="access.html">アクセス</a></li>
+              <li><a href="links.html">リンク</a></li>
+              <li><a href="index_e.html">English</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ナビゲーションボタン（スマホ対応） -->
+  <button class="mobile-nav-button" onclick="toggleNav()">
+    <span class="bar bar_top"></span>
+    <span class="bar bar_mid"></span>
+    <span class="bar bar_btm"></span>
+  </button>
+
+  <div class="main-content">
+    <section>
+      <p style="text-align:center"><img src="img/Top.png" alt="cover image" class="cover-image"></p>
+    </section>
+
+    <section>
+      <h2>
+        研究概要
+      </h2>
+
+      <p>
+        本研究室では、多様な環境で優れた適応能力を示す生物の歩行に着目し、生物の有する優れた運動知能の解明とその応用に関する研究を行っています。具体的には、計算論的神経科学と生体力学に基づく神経・筋・骨格システムのモデル化と動力学シミュレーション、そして力学系理論に基づく解析より、生物の優れた運動制御・運動形成メカニズムを数理的に明らかにし、更には得られた知見を工学的に具現化することで、優れた運動機能を示すロボットの開発を行っています。
+      </p>
+    </section>
+
+    <section>
+      <h2>
+        ニュース
+      </h2>
+
+      <div class="news-table">
+        <div class="news-row">
+          2022.9.??
+        </div>
+        <div class="news-row news-content">
+          ホームページを開設しました。
+        </div>
+
+        <div class="news-row">
+          2022.7.13
+        </div>
+        <div class="news-row news-content">
+          青井伸也教授が山口大学の共同獣医学部において講演しました。<a href="https://www.vet.yamaguchi-u.ac.jp/seminarinfo.html">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.6.22
+        </div>
+        <div class="news-row news-content">
+          D2の岡本耕太くん（京都大学からの指導委託）のヒトのシンプルモデルに関する論文がFrontiers in Neural
+          Circuitsより出版されました。京都大学の國府寛司教授、岡山大学の大林一平教授との共著論文です。<a
+            href="https://doi.org/10.3389/fncir.2022.836121">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.6.3
+        </div>
+        <div class="news-row news-content">
+          安達真永特任研究員の四脚動物の数理モデルに関する論文がFrontiers in Bioengineering and
+          Biotechnologyより出版されました。京都大学の松野文俊教授、名古屋工業大学の上村知也助教との共著論文です。<a
+            href="https://doi.org/10.3389/fbioe.2022.807777">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.5.19
+        </div>
+        <div class="news-row news-content">
+          D2の岡本耕太くん（京都大学からの指導委託）が第66回システム制御情報学会研究発表講演会(SCI'22)において、SCI学生発表賞を受賞しました。<a
+            href="https://sci22.iscie.or.jp/award/">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.5.10
+        </div>
+        <div class="news-row news-content">
+          多脚ロボットに関する論文がIEEE Transactions on Roboticsより出版されました。<a
+            href="https://doi.org/10.1109/TRO.2022.3158194">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.4.14
+        </div>
+        <div class="news-row news-content">
+          名古屋工業大学の上村知也助教、山口大学の和田直己教授の研究グループとのチーターの数理モデルに関する共著論文がFrontiers in Bioengineering and
+          Biotechnologyより出版されました。<a href="https://doi.org/10.3389/fbioe.2022.825638">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.4.8
+        </div>
+        <div class="news-row news-content">
+          M2の金勇紀くん（京都大学からの指導委託）のネコの神経筋骨格モデルに関する論文がFrontiers in Bioengineering and
+          Biotechnologyより出版されました。米国・ドレクセル大学のIlya Rybak教授の研究グループ、東京大学の柳原大教授、獨協医科大学の藤木聡一朗講師との共著論文です。<a
+            href="https://doi.org/10.3389/fbioe.2022.825149">詳細はこちら。</a>
+        </div>
+
+        <div class="news-row">
+          2022.4.1
+        </div>
+        <div class="news-row news-content">
+          研究室が発足しました。
+        </div>
+      </div>
+
+    </section>
+  </div>
+
+  <footer>
+    © 2022 国立大学法人 大阪大学 青井研究室 All Rights Reserved.
+  </footer>
+</body>
+
+<!-- ナビゲーションボタンを表示するためのスクリプトの読み込み -->
+<script src="js/toggleNav.js"></script>
+
+</html>
