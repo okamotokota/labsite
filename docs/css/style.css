@@ -364,7 +364,7 @@ body {
   }
 
   .navbar ul {
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .navbar ul li {
@@ -398,7 +398,7 @@ body {
 }
 
 /* large size device */
-@media(min-width: 1024px) {
+@media(min-width: 1180px) {
   .header-wrapper {
     height: 5rem;
   }
