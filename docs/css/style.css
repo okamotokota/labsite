@@ -2,6 +2,7 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: serif;
+  scroll-padding-top: 100px; /* 固定ヘッダの高さ 80px + margin 20px */
 }
 
 *,
