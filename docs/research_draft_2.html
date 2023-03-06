@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>研究内容 | 青井研究室</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="header-container">
+
+        <div class="header-labname">
+          <a href="index.html">
+            <div class="header-labname__major">
+              大阪大学大学院基礎工学研究科 機能創成専攻 生体工学領域
+            </div>
+            <div>
+              生体機械システムグループ 青井研究室
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <div id="navbar" class="navbar">
+            <ul>
+              <li><a href="index.html">トップ</a></li>
+              <li><a href="members.html">メンバー</a></li>
+              <li class="current-page"><a href="research.html">研究内容</a></li>
+              <li><a href="publications.html">研究業績</a></li>
+              <li><a href="access.html">アクセス</a></li>
+              <li><a href="links.html">リンク</a></li>
+              <li><a href="research_e.html">English</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ナビゲーションボタン（スマホ対応） -->
+  <button class="mobile-nav-button" onclick="toggleNav()">
+    <span class="bar bar_top"></span>
+    <span class="bar bar_mid"></span>
+    <span class="bar bar_btm"></span>
+  </button>
+
+  <div class="main-content">
+
+    <!-- 研究紹介動画 -->
+    <p style="text-align:center"><video src="img/research.mp4" class="intro-video" autoplay loop muted></video></p>
+    <!--
+    <div class="youtube">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/THQb9Fvb6ec?autoplay=1&mute=1&playsinline=1&loop=1&controls=0&playlist=THQb9Fvb6ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    -->
+
+    <p>
+      本研究室の研究テーマは、大きく分けて次の3つに分類される。
+      <ol>
+        <li><a href="#motion_analysis">運動解析</a></li>
+        <li><a href="#model">数理モデリング</a></li>
+        <li><a href="#robot">ロボット実験</a></li>
+      </ol>
+      ただし、研究内容によっては、これらを統合的に実施している。
+    </p>
+
+    <br>
+
+    <h2 id="motion_analysis">1．運動解析</h2>
+    <p>
+      ヒトや動物の有する優れた運動知能の解明に向けて、運動中の関節角度、筋電図、床反力などを計測し、様々な数理的解析手法を駆使して、計測データに内在するデータ構造を読み解く。
+      得られた結果から、優れた運動機能を実現する神経制御系について考察し、仮説を提案する。
+    </p>
+
+    <h3>1－1．運動学シナジー</h3>
+    <p>
+      ヒトや動物は、運動に必要な自由度よりも遙かに多い冗長な自由度を用いて運動を形成している。
+      しかしながら、全ての自由度を独立に制御するのではなく、複数の自由度に何らかの関係（拘束条件）を与えることで自由度を低減し、少数の自由度を制御することで運動を形成していると示唆されている。
+      例えば、大腿・下腿・足の3つの仰角を軸として、角度データを歩行1周期にわたってプロットすると、ほぼ3次元上の平面に載ることが知られている（Bianchi et al., 1998）。
+      これは、股関節・膝関節・足関節の3つの運動が、歩行中ある線形の関係を保ちながら共に変化するような協調構造を有していることを示唆しており、このような複数の関節運動に内在する低次元構造は運動学シナジーと呼ばれる。
+      特異値分解などの数理的手法を用いてこのような低次元構造を明らかにし、それを実現する神経制御系について考察する。
+    </p>
+
+    <br>
+
+    <p>
+      下図は、ヒトの歩行（A）と走行（B）において、体幹と左右脚3部位の合計7つの運動（7次元）が、歩容に依存した片足支持期（SS）と両足支持期（DS）、そして跳躍期（FL）のそれぞれにおいて、平面（2次元）の運動として説明できることを明らかにしたものである（Oshima et al., 2019）。
+    </p>
+
+    <br>
+
+    <p style="text-align:center">
+      <img style="width:70%" src="img/research_1-1.png">
+    </p>
+
+    <h3>1－2．筋シナジー</h3>
+    <p>
+      関節の運動を作り出す筋は、更に多くの自由度を有している。
+      下図のように、歩行中の多くの筋の活動は、タイミングの異なる少数の活動パターンの線形和として説明できることが知られており（Ivanenko et al., 2004）、このような複数の筋活動に内在する低次元構造は筋シナジーと呼ばれる。
+      非負値行列因子分解などの数理的手法を用いてこのような低次元構造を明らかにし、それを実現する神経制御系について考察する。
+    </p>
+
+    <br>
+
+    <p style="text-align:center">
+      <img style="width:50%" src="img/research_1-2.png">
+    </p>
+
+    <h3>1－3．肢間協調</h3>
+    <p>
+      ヒトは歩行や走行において、左右の脚を交互に動かし、状況に応じて左右の位相関係を変化させる。
+      四足動物や多くの脚を持つ節足動物は、速度に応じてそれぞれの脚の位相関係を変化させる。
+      四足動物の低速時のウォーク（四肢を一本ずつ動かす）や中速時のトロット（右前肢と左後肢など対角の脚を同時に動かす）、そして高速時のギャロップ（四肢をバラバラに動かすが、全ての脚が空中にある期間が存在する）などがその一例である。
+      速度変化や環境変化に応じた適応的な歩行には、肢間の適切な位相関係、すわなち、肢間協調が不可欠である。
+      非線形振動子の位相縮約理論などの数理的手法を用いて歩行中の肢間協調を明らかにし、それを実現する神経制御系について考察する。
+    </p>
+
+    <br>
+
+    <p>
+      下図は、イヌのトレッドミル上での歩行において、ベルト速度の加速時にウォークからトロットに遷移する速度と、減速時にトロットからウォークに遷移する速度が異なるヒステリシスを生じることを示したものである（Aoi et al., 2013）。
+    </p>
+
+    <br>
+
+    <p style="text-align:center">
+      <img style="width:40%" src="img/research_1-3.png">
+    </p>
+
+
+    <h2 id="model">2．数理モデリング</h2>
+    <p>
+      歩行とは、脳神経系と身体筋骨格系、そして環境との相互作用を介して実現される複雑な力学現象であり、運動解析のみからその全体像を理解するには限界がある。
+      数理モデルを用いた動力学シミュレーションや力学系理論解析より、適応的な歩行が形成されるメカニズムを解き明かす。
+    </p>
+
+    <h3>2－1．神経筋骨格モデル</h3>
+    <p>
+      計算論的神経科学や仮説に基づく神経制御系の数理モデルと、解剖学や生体力学に基づく身体筋骨格系の数理モデルを統合した神経筋骨格モデルを用いた動力学シミュレーションより、生物の歩行を再現する。
+      生物の運動計測では実施困難なパラメータ依存性の調査などを含む力学解析を介して仮説を検証し、優れた歩行機能を実現する神経筋骨格系の数理構造を明らかにする。
+    </p>
+
+    <br>
+
+    <p>
+      左下図は筋シナジーに基づく神経制御系をモデル化した、ヒトの歩行・走行を実現する神経筋骨格モデル（Aoi et al., 2019）、右下図は階層的な構造を持つ脊髄のCPG（中枢パターン生成器）をモデル化した、ネコ後肢の神経筋骨格モデル（Kim et al., 2022）を示している。
+    </p>
+
+    <br>
+
+    <p style="text-align:center">
+      <img style="width:90%" src="img/research_2-1.png">
+    </p>
+
+    <h3>2－2．シンプルモデル</h3>
+    <p>
+      生物の歩行機能を説明する必要最小限の数理モデルを構築し、その機能を実現する本質的な力学原理を明らかにする。
+    </p>
+
+    <br>
+
+    <p>
+      左下図はコンパス型のシンプルな骨格モデルを用いたヒトの歩行モデル（Okamoto et al., 2022）、右下図は体幹の曲げ伸ばしに着目した２つの剛体とバネからなるチーターのギャロップモデル（Kamimura et al., 2022）を示している。
+    </p>
+
+    <br>
+
+    <p style="text-align:center">
+      <img style="width:60%" src="img/research_2-2.png">
+    </p>
+
+
+    <h2 id="robot">3．ロボット実験</h2>
+
+    <h3>3－1．二足ロボット</h3>
+
+    <h3>3－2．四足ロボット</h3>
+
+    <h3>3－3．多足ロボット</h3>
+
+
+  </div>
+
+  <footer>
+    © 2022 大阪大学 青井研究室
+  </footer>
+</body>
+
+<!-- ナビゲーションボタンを表示するためのスクリプトの読み込み -->
+<script src="js/toggleNav.js"></script>
+
+</html>
