@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Seminar | Aoi Lab.</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-wrapper">
+      <div class="header-container">
+
+        <div class="header-labname">
+          <a href="index_e.html">
+            <div class="header-labname__major">
+              Department of Mechanical Science and Bioengineering,<br>
+              Graduate School of Engineering Science, Osaka University
+            </div>
+            <div>
+              Neuromechanics Group - Aoi Lab.
+            </div>
+          </a>
+        </div>
+
+        <nav>
+          <div id="navbar" class="navbar">
+            <ul>
+              <li><a href="index_e.html">Top</a></li>
+              <li class="current-page"><a href="members_e.html">Members</a></li>
+              <li><a href="research_e.html">Research</a></li>
+              <li><a href="publications_e.html">Publications</a></li>
+              <li><a href="access_e.html">Access</a></li>
+              <li><a href="links_e.html">Links</a></li>
+              <li><a href="members.html">日本語</a></li>
+            </ul>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <button class="mobile-nav-button" onclick="toggleNav()">
+    <span class="bar bar_top"></span>
+    <span class="bar bar_mid"></span>
+    <span class="bar bar_btm"></span>
+  </button>
+
+  <div class="main-content">
+    <h2>
+      Seminar on Mechanical Science and Bioengineering: Monday, June 5, 2023
+    </h2>
+
+    <h3>
+      Time: 15:10 - 17:10<br>
+      Location: Engineering Science International Building, Seminar Room<br>
+    </h3>
+
+    <br>
+
+    <p>
+      Time: 15:10 - 16:10
+    </p>
+    <p><strong>
+      Exploring Spinal Locomotor Circuitry through Computational Modeling
+    </strong></p>
+    <p>
+      Simon M. Danner (Drexel University College of Medicine, USA)
+    </p>
+    <p>
+      Abstract:
+    </p>
+    <p>
+      To effectively navigate complex and changing environments, animals must control locomotor speed and gait, while precisely coordinating and adapting limb movements to the terrain. The underlying neuronal control is facilitated by circuits in the spinal cord that integrate supraspinal commands and afferent feedback signals to produce coordinated rhythmic muscle activations necessary for stable locomotion. I will present a series of computational models investigating dynamics of central neuronal interactions as well as a neuromechanical model that integrates neuronal circuits with a model of the musculoskeletal system. These models closely reproduce speed-dependent gait expression and experimentally observed changes following manipulation of multiple classes of genetically- or anatomically-identified neuronal populations. I will discuss the utility of these models in providing testable predictions for future studies.
+    </p>
+    <p>
+      Bio:
+    </p>
+    <p>
+      Simon M. Danner is currently an Assistant Professor in the Department of Neurobiology and Anatomy at Drexel University’s College of Medicine in Philadelphia, PA. He earned his PhD from the Vienna University of Technology and completed postdoctoral training at the Medical University of Vienna. Dr. Danner's research focuses on the neural control of locomotion. His lab uses computational modeling techniques to investigate both basic mechanisms and rehabilitation strategies related to neurological disorders.
+    </p>
+
+    <br>
+
+    <p>
+      Time: 16:10 - 16:40
+    </p>
+    <p><strong>
+      Real-to-Sim: Methods, tools, and experiences from computational modelling of animal locomotion
+    </strong></p>
+    <p>
+      Shravan Tata Ramalingasetty (Drexel University College of Medicine, USA)
+    </p>
+    <p>
+      Abstract:
+    </p>
+    <p>
+      In the field of robotics, computer-aided simulations have become a crucial tool for rapid prototyping of robot designs, testing, and training of controllers. However, the critical challenge is effectively transferring the simulations to the physical hardware. This Real-to-Sim transfer is the opposite process of transferring experimental observations into neuromechanical simulation models for animal locomotion studies. This presentation will focus on Real-to-Sim and its role in developing neuromechanical models of animals to study animal movement, particularly locomotion. The creation of neuromechanical models involves complex processes such as modelling rigid-body dynamics, muscle-models, and neural networks. The talk will highlight the development of neuromechanical models of Mouse, Drosophila Melanogaster, and Rhesus Macaque. These case studies will demonstrate how neuromechanical simulations are used to investigate various aspects of animal motor control and complement animal experiments. Finally, the presentation will cover the use of open-source tools and frameworks, along with personal experiences, in developing neuromechanical simulations. Attendees will gain insights into the techniques and applications of Real-to-Sim transfer for neuromechanical simulations.
+    </p>
+    <p>
+      Bio:
+    </p>
+    <p>
+      Shravan Tata Ramalingasetty is currently a postdoctoral fellow in Dr. Danner’s lab at the Department of Neurobiology and Anatomy, Drexel University, Philadelphia, PA, USA. His current research is primarily focused on developing computational models of spinal circuitry to study locomotor behaviors in mice. Dr. Tata Ramalingasetty earned his Master of Science (M.Sc.) degree in Bio-robotics from the Technical University of Delft in 2016. His master's thesis was titled “Cerebellum Inspired Computational Models for Robot Control”. He then obtained his PhD from the BioRob Laboratory at EPFL, Switzerland in 2022 under the guidance of Prof. Auke Ijspeert. During his PhD, he was funded by the Human Brain Project (HBP) to develop computational models and tools for studying the neuromechanics of terrestrial locomotion.
+    </p>
+
+    <br>
+
+    <p>
+      Time: 16:40 - 17:10
+    </p>
+    <p><strong>
+      Using robotics to investigate neuronal control of turning
+    </strong></p>
+    <p>
+      Andrew B. Lockhart (Drexel University College of Medicine, USA)
+    </p>
+    <p>
+      Abstract:
+    </p>
+    <p>
+      Locomotion is a critical behavior that allows animals to move in the external world. The underlying neuronal circuitry combines information from the spinal cord with afferent feedback to execute descending commands. Most of what we know about the neuronal control of locomotion pertains to straightforward locomotion; how turning or the change in direction is controlled, remains poorly understood. I will present a quadrupedal robot controlled by a model of spinal locomotor circuits to study various mechanisms of turning. Using a robot allows us to study the impact of these turning strategies on stability and balance. The quadrupedal robot has 13 degrees of freedom: three joints per limb and one joint within the torso that allows for lateral bending of the body. The neuronal model controlling the robot includes four coupled rhythm generators, each controlling one limb. These rhythm generators receive sensory feedback that characterizes loading and extension of the corresponding limb. The robot model was able to exhibit speed-dependent changes of stance and swing phase durations. We studied the effectiveness of left–right asymmetric changes to induce turning at different speeds and gaits. Our model suggests that a combination of strategies is needed to effectively turn while maintaining stability, and that the optimal strategy depends on the locomotor gait and speed. Thus, control of turning likely involves task- and speed-dependent modulation of the spinal neuronal circuits at multiple levels.
+    </p>
+    <p>
+      Bio:
+    </p>
+    <p>
+      Andrew Lockhart is a neuroscience PhD student in Dr. Danner’s lab at the Department of Neurobiology and Anatomy, Drexel University, Philadelphia, PA, USA. His current work focuses on building neuronal models to control robotics to investigate how biology produces locomotion. He has a B.S. in mechanical engineering from Georgia Institute of Technology and another in applied physics from Berry College.
+    </p>
+
+  </div>
+
+  <footer>
+    © 2023 Osaka University Aoi-Lab.
+  </footer>
+</body>
+
+<script src="js/toggleNav.js"></script>
+
+</html>
